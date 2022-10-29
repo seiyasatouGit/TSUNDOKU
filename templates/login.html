@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>ログインページ</h1>
+<form action="/login" method="POST">
+    <p>お名前</p>
+    <input type="text" name="name">
+    <p>パスワード</p>
+    <input type="password" name="password">
+    <input type="submit" name="save" value="ログイン">
+    <!-- <h2>新規登録を希望の方</h2>
+    <input type="submit"  name="save" value="新規登録へ"> -->
+    <a href="/regist" ><font size="6" color="black">新規登録の方はここをクリック</font></a>
+    <!-- <a href="/regist" >新規登録の方はここをクリック</a> -->
+    
+<!-- <h3>ゲストのまま進む</h3>
+    <input type="submit"  name="save" value="入力ページへ"> -->
+   <td><a href="/add2"><font size="6" color="black">登録しないで使う方はここをクリック</font></a></td> 
+   <!-- <td><a href="/"><font size="6" color="red">TOPへ戻る</font></a></td>  -->
+</form>
+
+
+{% endblock %}

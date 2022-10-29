@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<body>
+    <h1>TSUNDOKU 計算結果</h1>
+    <h2>書籍名</h2>
+    <p>{{title}}</p>
+    <h3>総ページ数</h3>
+    <p>{{page}} ページ</p>
+    <h4>1日の読書時間</h4>
+    <p>{{time}} 分</p>
+    <h5>予想読破日数</h5>
+    <p>{{day}} 日</p>
+    <td><a href="/add2"><font size="6" color="black">計算をやり直す</font></a></td>
+    <td><a href="/"><font size="4" color="red">TOPへ戻る</font></a></td>
+</body>
+{% endblock %}

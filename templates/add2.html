@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>登録しないで計算する</h1>
+<form action="/calc" method="POST">
+<h2>本のタイトル</h2>
+    <input type="text" placeholder="入力サンプル" name="title">
+<h3>ページ数</h3>
+    <input type="number" placeholder="数字を入れてください" name="page">
+<h4>1日の読書時間</h4>
+    <input type="number" placeholder="分数を入れてください" name="time">
+    <input type="submit" name="save" value="計算">
+</form>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>本の編集画面</h1>
+<form action="/edit" method="post">
+    <input type="hidden" value="{{book_info['id']}}" name="id">
+    <input type="text" value="{{book_info['title']}}" size="50" maxlength="50" name="title">
+    <input type="text" value="{{book_info['page']}}" size="20" maxlength="10" name="page">
+    <input type="text" value="{{book_info['time']}}" size="20" maxlength="10" name="time">
+    <input type="submit" name="save" value="編集する">
+</form>
+
+{% endblock %}
